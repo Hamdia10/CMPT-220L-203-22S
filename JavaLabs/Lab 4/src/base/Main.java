@@ -50,23 +50,29 @@ public class Main {
         }
         //int number = 9;
        // int power = 7;
-        //System.out.println(result);  
+        //System.out.println(result);
 
+        //EXPONENT
          func(7, 3);
 
+      
+      //System.out.println("Result of Pythagorean theorem is = "+c);
+      //trig(7,9);
+
+      //PYTHEOREM 
+      Pytheorem(8,4);
+      addition(8,4);
+      division(8,4);
+
+      //COUNT
+      // calling method countGivenNumberAppearanceInList with parameters
       int[] list = { 2, 3, 5, 2, 3, 6, 7, 8, 2 };
    
       int givenNumber = 3;
-      //System.out.println("Result of Pythagorean theorem is = "+c);
-      //trig(7,9);
-      Pytheorem(8,4);
-
-
-      // calling method countGivenNumberAppearanceInList with parameters
       System.out.println(countGivenNumberAppearanceInList(list, givenNumber));
 
 
-
+    //SUMMATION
       int[]  specialNo = {12,4,8,9,98};
       int regularNumber = 4;
       System.out.println( summation ( specialNo, regularNumber));
@@ -122,15 +128,7 @@ public class Main {
         
     
 
-    // class Party{
-    // public static void main(String[] args) {
-    // Scanner scan = new Scanner (System.in);
-    // System.out.println("Enter a number: ");
-    // int
-
-    // }
-
-    // }
+    
     
 
     /**
@@ -189,9 +187,6 @@ public class Main {
             sum += specialNo[i];
         }
         
-            
-            
-
         return sum;
         
 
@@ -255,15 +250,15 @@ public class Main {
 
     
 
-    //int addition(int a, int b) {
-        //int answer = a + b;
-        //return answer;
-    //}
+    static int addition(int a, int b) {
+        int answer = a + b;
+        return answer;
+    }
 
-   // static int division(int a, int b) {
-       // int answer = a / b;
-        //return answer;
-   // }
+   static int division(int a, int b) {
+        int answer = a / b;
+        return answer;
+    }
 }
 
 
