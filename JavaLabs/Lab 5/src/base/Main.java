@@ -28,13 +28,74 @@ public class Main {
 
 
     public static void main(String[] args) {
-        //	Replace this with your dry inventory function!
+        int [] lemonadeList = {1,3,2,6,4,8,1,7,3,2};
+        int [] pretzelList ={4,2,3,1,2,10,6,1,2,6,9};
+        int [] cashList= {8,8,4,24,6,2,16,48,32,4,20,64,12,8,2,56,4,12,24,18,16};
+        int [] tipList = {4,10,5,4,10,4,3};
+        System.out.println(totalCash(cashList));
+        System.out.println(totalTip(tipList));
+        System.out.println(pretzellStand(pretzelList));
+        int pretzelsAvailable = 60 - pretzellStand(pretzelList);
+        System.out.println(pretzelsAvailable);
+        System.out.println(lemonadeStand(lemonadeList));
+        int lemonadeAvailable = 43 - lemonadeStand(lemonadeList);
+        System.out.println(lemonadeAvailable);
+        System.out.println("Results for the hour!");
+        System.out.println("Lemonades Inventory: " + lemonadeAvailable);
+        System.out.println("Pretzels Inventory: " + pretzelsAvailable);
+        System.out.println("Cash: " + totalCash(cashList));
+        System.out.println("Tips: " + totalTip(tipList));
+
         wet_inventory();
+
     }
 
-    static void dry_inventory() {
-        // Your DRY Solution goes here!
-    }
+    //static void dry_inventory() {
+    public static int pretzellStand(int[] pretzelList ){
+            int sum = 0;
+            int i;
+            for (i = 0; i < pretzelList.length; i++) {
+                sum += pretzelList[i];
+        
+    
+            }
+            return sum;
+    
+        }
+    public static int lemonadeStand(int [] lemonadeList ){
+            int add = 0;
+            int i;
+            for (i=0; i < lemonadeList.length; i++) {
+                add += lemonadeList[i];
+            }
+            return add;
+    
+        }
+    public static int totalCash(int []cashList){
+            int count = 0;
+            int i;
+            for (i=0; i < cashList.length; i++) {
+                count += cashList[i];
+            }
+            return count;
+        }
+    
+    public static int totalTip(int [] tipList){
+            int value = 0;
+            int i;
+            for (i=0; i < tipList.length; i++) {
+                value += tipList[i];
+            }
+        
+        return value;
+        }
+        
+    
+    
+    
+    
+        
+    
 
     static void wet_inventory() {
         /**
