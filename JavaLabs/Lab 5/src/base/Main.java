@@ -48,6 +48,8 @@ public class Main {
 
         wet_inventory();
 
+       
+
     }
 
     //static void dry_inventory() {
@@ -89,6 +91,7 @@ public class Main {
         
         return value;
         }
+    
         
     
     
