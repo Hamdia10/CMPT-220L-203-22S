@@ -47,12 +47,12 @@ public class Main {
         System.out.println("Tips: " + totalTip(tipList));
 
         wet_inventory();
-
+        
        
 
     }
 
-    //static void dry_inventory() {
+    //static void  dry_inventory() {
     public static int pretzellStand(int[] pretzelList ){
             int sum = 0;
             int i;
@@ -62,8 +62,10 @@ public class Main {
     
             }
             return sum;
-    
+
         }
+    
+    
     public static int lemonadeStand(int [] lemonadeList ){
             int add = 0;
             int i;
@@ -91,6 +93,8 @@ public class Main {
         
         return value;
         }
+
+    
     
         
     
