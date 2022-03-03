@@ -36,7 +36,8 @@ public class Main {
             for (int number: oddnumbers) {
                 System.out.println(number);
             }
-}
+        
+    }
 
 
         // Create an ArrayList, Populate it, and Print it out
@@ -91,21 +92,21 @@ public class Main {
         planeParts.push("Vertical Stabilizer");
         System.out.println(planeParts);
         // Using the information in the Lab 6 Jupyter Notebook create an instance of plant here.
-        Plant oakTree = new Plant (true, true, 34.9, true, true,"All plants produce Oxygen" );
-        Plant roseBush = new Plant (true, true, 8.7, true, true,"All plants produce Oxygen" );
-        System.out.print(oakTree.hasLeaves);
-        System.out.println(oakTree.hasRoots);
-        System.out.println(oakTree.height);
-        System.out.println(oakTree.hasStem);
-        System.out.println(oakTree.hasBranches);
-        System.out.println(oakTree.allplants);
+        Plant p1 = new Plant (true, "Rosaceae", 34.9,"Rosebush" );
+        Plant p2 = new Plant (true, "Quercaceae", 8.7, "Oaktree" );
+        System.out.print(p1.needsWatering);
+        System.out.println(p1.plantFamily);
+        System.out.println(p1.height);
+        System.out.println(p1.Name);
 
-        System.out.print(roseBush.hasLeaves);
-        System.out.println(roseBush.hasRoots);
-        System.out.println(roseBush.height);
-        System.out.println(roseBush.hasStem);
-        System.out.println(roseBush.hasBranches);
-        System.out.println(roseBush.allplants);
+        System.out.print(p2.needsWatering);
+        System.out.println(p2.plantFamily);
+        System.out.println(p2.height);
+        System.out.println(p2.Name);
+        
+        
+
+        
         
 
     }
