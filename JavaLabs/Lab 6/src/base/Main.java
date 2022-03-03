@@ -98,5 +98,13 @@ public class Main {
         System.out.println(oakTree.height);
         System.out.println(oakTree.hasStem);
         System.out.println(oakTree.hasBranches);
+
+        System.out.print(roseBush.hasLeaves);
+        System.out.println(roseBush.hasRoots);
+        System.out.println(roseBush.height);
+        System.out.println(roseBush.hasStem);
+        System.out.println(roseBush.hasBranches);
+        
+
     }
 }
