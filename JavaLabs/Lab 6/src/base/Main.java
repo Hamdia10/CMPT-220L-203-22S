@@ -92,17 +92,19 @@ public class Main {
         planeParts.push("Vertical Stabilizer");
         System.out.println(planeParts);
         // Using the information in the Lab 6 Jupyter Notebook create an instance of plant here.
-        Plant p1 = new Plant (true, "Rosaceae", 34.9,"Rosebush" );
-        Plant p2 = new Plant (true, "Quercaceae", 8.7, "Oaktree" );
+        Plant p1 = new Plant (true, "Rosaceae", 34.9,"Rosebush" , 45);
+        Plant p2 = new Plant (true, "Quercaceae", 8.7, "Oaktree", 34.9 );
         System.out.print(p1.needsWatering);
         System.out.println(p1.plantFamily);
         System.out.println(p1.height);
-        System.out.println(p1.Name);
+        System.out.println(p1.plantName);
+        System.out.println(p1.waterlevel);
 
         System.out.print(p2.needsWatering);
         System.out.println(p2.plantFamily);
         System.out.println(p2.height);
-        System.out.println(p2.Name);
+        System.out.println(p2.plantName);
+        System.out.println(p2.waterlevel);
         
         
 
