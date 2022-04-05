@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
+        "Lab 7.",
         "Lab 3/src",
-        "Lab 7."
+        "BinarySearchTree",
+        "BinarySearchTree "
     ]
 }
