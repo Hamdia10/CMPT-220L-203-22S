@@ -1,9 +1,20 @@
 package com.company;
 
-public class TreeNodes {
+public class TreeNodes  {
+    
     TreeNodes left;
     TreeNodes right;
     int leaves;
+    
+    
+
+    
+    
+
+    
+    
+    
+    
     
 
 }
