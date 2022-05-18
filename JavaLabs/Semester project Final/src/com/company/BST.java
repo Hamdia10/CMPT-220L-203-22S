@@ -62,6 +62,8 @@ public class BST {
         //This prints out the nodes after either the left node or rihht nodfe has been deleted
         System.out.println(root.leaves);
         
+
+        
         return root;
 
     }

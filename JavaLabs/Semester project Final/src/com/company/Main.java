@@ -27,7 +27,7 @@ public class Main {
 
 
 
-
+        
         System.out.println("");
         System.out.println("\nInorder traversal");
         x.inOrder(root);
@@ -82,6 +82,7 @@ public class Main {
         System.out.println("");
         System.out.println("Remove:");
         root = x.remove(x.createNewTreeNode(8));
+        root = x.remove(root);
 
         
        
