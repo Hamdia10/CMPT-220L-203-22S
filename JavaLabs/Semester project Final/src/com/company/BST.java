@@ -48,21 +48,21 @@ public class BST {
         MinMaxValue(node.right);
     }
     //This function removes a node from a tree.
-    public  TreeNodes remove(TreeNodes node){
-        //This checks if the node is null, once this is true it returns null else this code does not go further.
+    public  TreeNodes remove(TreeNodes root){
+        //This checks if the root is null, once this is true it returns null else this code does not go further.
 
-        if  (node == null) {
+        if  (root == null) {
             return null;
 
         }
         //Then  the left node is assigned to the method remove(node.left)
-        node.left = remove(node.left);
+        root.left = remove(root.left);
         //This is the same for this line of code
-        node.right = remove(node.right);
+        root.right = remove(root.right);
         //This prints out the nodes after either the left node or rihht nodfe has been deleted
-        System.out.println(node.leaves);
-        node = null;
-        return node;
+        System.out.println(root.leaves);
+        
+        return root;
 
     }
     public TreeNodes add(TreeNodes node, int num) {

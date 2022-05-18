@@ -23,7 +23,7 @@ public class Main {
 
 
         System.out.println("");
-        System.out.println("Inorder traversal");
+        System.out.println("\nInorder traversal");
         x.inOrder(root);
         System.out.println("\nPreorder traversal ");
         x.preOrder(root);
@@ -33,6 +33,9 @@ public class Main {
 
         System.out.println("");
         x.breathFirstSearch(root);
+        System.out.println("");
+
+        System.out.println("Search: ");
         System.out.println(x.Search(root, 0));
         System.out.println(x.Search(root, 23));
 
@@ -43,10 +46,13 @@ public class Main {
 
 
         System.out.println("");
+       
 
 
         x.MinMaxValue(root);
+        System.out.println("Maximum value: ");
         System.out.println(x.maximum);
+        System.out.println("Minimunm value: ");
         System.out.println(x.minimum);
 
         System.out.println("");
@@ -61,19 +67,26 @@ public class Main {
 
 
 
-        System.out.println("");
+        System.out.println("\nIn-0rder traversal :");
         x.inOrder(root);
-        System.out.println();
+        System.out.println("\nPost-0rder traversal :");
         x.postOrder(root);
-        System.out.println();
+        System.out.println("\n Pre-0rder traversal :");
         x.preOrder(root);
         System.out.println("");
+
+        System.out.println("The height of the tree is: ");
+       
         System.out.println(x.getHeight(root));
         System.out.println("");
 
-        root = x.remove(root);
-        System.out.println();
-        root = x.add(root, 9);
+        System.out.println("Remove:");
+        root = x.remove(x.createNewTreeNode(0));
+
+
+       
+        
+        
 
 
 
