@@ -6,13 +6,13 @@ public class Main {
     public static void main(String[] args) {
 	// write your code here
         BST x = new BST();
-        TreeNodes root = x.createNewTreeNode(0);
-        root.left = x.createNewTreeNode(1);
-        root.right = x.createNewTreeNode(2);
-        root.left.left = x.createNewTreeNode(3);
-        root.left.right = x.createNewTreeNode(4);
-        root.left.right.left = x.createNewTreeNode(5);
-        root.left.right.right = x.createNewTreeNode(6);
+        TreeNodes root = x.createNewTreeNode(8);
+        root.left = x.createNewTreeNode(6);
+        root.right = x.createNewTreeNode(18);
+        root.left.left = x.createNewTreeNode(11);
+        root.left.right = x.createNewTreeNode(14);
+        root.left.right.left = x.createNewTreeNode(7);
+        root.left.right.right = x.createNewTreeNode(24);
         
         System.out.println(" ");
         System.out.println("The height of the tree is: ");
