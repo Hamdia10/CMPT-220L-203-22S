@@ -13,6 +13,8 @@ public class Main {
         root.left.right = x.createNewTreeNode(14);
         root.left.right.left = x.createNewTreeNode(7);
         root.left.right.right = x.createNewTreeNode(24);
+
+        
         
         System.out.println(" ");
         System.out.println("The height of the tree is: ");
@@ -78,12 +80,13 @@ public class Main {
         System.out.println("\n Pre-0rder traversal :");
         x.preOrder(root);
         System.out.println("");
+        System.out.println("Remove:");
+        root = x.remove(x.createNewTreeNode(8));
 
         
        
         
-        System.out.println("Remove:");
-        root = x.remove(x.createNewTreeNode(0));
+        
 
 
        
