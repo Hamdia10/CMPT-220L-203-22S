@@ -277,6 +277,82 @@ public class BST {
      //Then returns found in order for the value storted in found to change from false to true.
      return found;
     }
+    public void inOrderStack(TreeNodes node) {
+        if(node == null) {
+          return;
+        }
+        
+        Stack<TreeNodes> stack = new Stack<TreeNodes>();
+        while(node != null) {
+          stack.push(node);
+          node = node.left;
+        }
+        
+        while(stack.size() > 0) {
+          TreeNodes tree = stack.pop();
+          System.out.print(tree.leaves + " ");
+          if(tree.right != null) {
+            TreeNodes temp = tree.right;
+            while(temp != null) {
+              stack.push(temp);
+              temp = temp.left;
+            }
+          }
+        }
+    }
+    public void preOrderStack(TreeNodes node) {
+        if(node == null) {
+          return;
+        }
+        
+        Stack<TreeNodes> stack = new Stack<TreeNodes>();
+        
+        stack.push(node);
+        
+        while(stack.size() > 0) {
+          TreeNodes tree = stack.pop();
+          System.out.print(tree.leaves + " ");
+          
+          if(tree.right != null) {
+            stack.push(tree.right);
+          }
+          
+          if(tree.left != null) {
+            stack.push(tree.left);
+          }
+        }
+    }
+    public void postOrderStack(TreeNodes node) {
+        if(node == null) {
+          return;
+        }
+        
+        Stack<TreeNodes> stack = new Stack<TreeNodes>();
+        Stack<TreeNodes> stack1 = new Stack<TreeNodes>();
+        
+        stack.push(node);
+        
+        while(stack.size() > 0) {
+          TreeNodes tree = stack.pop();
+          
+          if(tree.left != null) {
+            stack.push(tree.left);
+        }
+          
+        if(tree.right != null) {
+            stack.push(tree.right);
+        }
+          
+        stack1.push(tree);
+        }
+        
+        while(stack1.size() > 0) {
+        System.out.print(stack1.pop().leaves + " ");
+        }
+      
+        
+      
+    }
 
 
 

@@ -77,12 +77,24 @@ public class Main {
         x.inOrder(root);
         System.out.println("\nPost-0rder traversal :");
         x.postOrder(root);
-        System.out.println("\n Pre-0rder traversal :");
+        System.out.println("\nPre-0rder traversal :");
         x.preOrder(root);
+        System.out.println(" ");
+        System.out.println("\nDepth first search :");
+
+        //Depth first search
+        x.inOrderStack(root);
+        System.out.println(" ");
+        x.preOrderStack(root);
+        System.out.println(" ");
+        x.postOrderStack(root);
+
         System.out.println("");
         System.out.println("Remove:");
         root = x.remove(x.createNewTreeNode(8));
         root = x.remove(root);
+
+        
 
         
        
